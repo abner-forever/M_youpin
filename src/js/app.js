@@ -1,6 +1,6 @@
-import shoplist_render from  './controllers/shoplistrender_controller'
+import home_render from  './controllers/home_controller'
 
-shoplist_render.render();
+home_render.render();
 
 console.log("你好app.js");
 

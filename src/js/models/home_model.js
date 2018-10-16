@@ -8,6 +8,8 @@ const shop_list = ()=>{
             return res;
         }
     })
+    //https://app.youpin.mi.com/app/shopv3/pipe
+
 }
 export default{
     shop_list

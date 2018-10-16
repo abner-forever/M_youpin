@@ -1,9 +1,1 @@
-@import './modules/nav';
-@import './modules/app';
-@import './modules/tab';
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-}
+@import './modules/home.scss';
