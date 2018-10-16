@@ -1,1 +1,7 @@
+//首页样式
 @import './modules/home.scss';
+
+@import './modules/tab';
+#root{
+    position: relative;
+}

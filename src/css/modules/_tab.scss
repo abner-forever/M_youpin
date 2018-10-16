@@ -8,6 +8,9 @@ $top:-1.267rem;
     display: flex;
     justify-content: space-between;
     background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
     .tab-item{
         height: 100%;
         flex: 1;
