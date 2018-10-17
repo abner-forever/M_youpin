@@ -12,6 +12,13 @@ const server_config = {
                 '^/youpin':''
             }
         }),
+        proxy('/api',{
+            target : 'http://localhost:3000/classdata',
+            changeOrigin:true,
+            pathRewrite:{
+                '^/api':''
+            }
+        })
         // proxy('/api',{
         //     target:'http://localhost:3000',
         //     changeOrigin:true,

@@ -1,7 +1,19 @@
-import shoplist_render from  './controllers/shoplistrender_controller'
 
-shoplist_render.render();
+import tab_render from './controllers/tab_controller';
 
-console.log("你好app.js");
+import Router from './router'
+
+
+tab_render.render();
+
+//启动路由
+
+const router = new Router ({ initial: "#/home" });
+
+window.router = router;
+
+router.init();
+
+
 
 

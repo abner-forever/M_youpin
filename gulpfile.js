@@ -57,8 +57,8 @@ gulp.task('compile:js', () => {
 //监听
 gulp.task('watch', () => {
     gulp.watch('./src/**/*.html', ['copy:html'])
-    gulp.watch('./src/**/*.scss', ['compile:scss'])
-    gulp.watch('./src/**/*.js', ['compile:js'])
+    gulp.watch('./src/css/**/*.scss', ['compile:scss'])
+    gulp.watch('./src/js/**/*.js', ['compile:js'])
     gulp.watch('./src/static/**/*.*', ['copy:static'])
 
     watch('src/static', (v) => { //当src/static中的文件变化后执行
