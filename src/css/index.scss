@@ -1,6 +1,8 @@
-@import './modules/home.scss';
+@import './modules/home';
 @import './modules/tab';
 @import './modules/class';
+@import './modules/personal';
+@import './modules/taste';
 body{
     display: flex;
     flex-direction: column;

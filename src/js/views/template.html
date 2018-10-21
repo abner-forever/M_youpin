@@ -1,0 +1,16 @@
+
+
+<!-- 下面的模板 -->
+<script id="template" type="text/html">
+    {{each picture}}
+    <div class="template">
+        <div class="template__picture">
+            <img src="{{$value.pic_url}}"
+                alt="">
+        </div>
+        <div class="template__bigtitle">{{$value.title}}</div>
+        <div class="template__smalltitle">{{$value.subtitle}}</div>
+        <p class="template__btn"><a href="">去发现</a></p>
+    </div>
+    {{/each}}
+</script>

@@ -1,0 +1,116 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body,.personal{
+    width: 100%;
+    height: 100%;
+    header{
+        height: 2.666667rem;
+        padding: 0 .666667rem;
+        background: url(https://static.home.mi.com/youpin/static/m/res/images/personal_bg_top.png) center no-repeat;
+        background-size: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header-left{
+            height: 1.6rem;
+            width: 1.6rem;
+            flex: 0 0 auto;
+        }
+        p{
+            padding-left: .266667rem;
+            flex: 1 1 auto;
+            font-size: .373333rem;
+            color: #fff;
+        }
+        .header-right{
+            height: .48rem;
+            width: .48rem;
+        }
+    }
+    .line{
+        height: .133333rem;
+        background-color: rgb(248, 248, 248);
+    }
+    section{
+        .indent{
+            padding: 0 .266667rem 0 .533333rem;
+            height: 1.066667rem;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: .026667rem solid #E4E4E4;
+            span{
+                font-size: .373333rem;
+            }
+            .indent__picture{
+                height: .4rem;
+                width: .4rem;
+            }
+        }
+        .task{
+            height: 1.84rem;
+            display: flex;
+            justify-content: space-between;
+            .task__children{
+                height: 1.84rem;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                img{
+                    height: .613333rem;
+                    width: .613333rem;
+                    margin-bottom: .133333rem;
+                }
+                span{
+                    font-size: .32rem;
+                    color: rgba(0, 0, 0, 0.6);
+                }
+            }
+        }
+        .red-packet{
+            width: 100%;
+            height: 2.213333rem;
+            img{
+                @extend .red-packet;
+            }
+        }
+        .othertask{
+            border-bottom: .026667rem solid #E4E4E4;
+            .other__task{
+                height: 1.306667rem;
+                padding: 0 0 0 .4rem;
+                margin-right: .4rem;
+                border-bottom: .026667rem solid #E4E4E4;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .other--task-left{
+                    height: 1.013333rem;
+                    width: 1.013333rem;
+                }
+                p{
+                    font-size: .373333rem; 
+                    flex: 1 1 auto;
+                }
+                span{
+                    font-size: .32rem;
+                    color: rgb(153, 153, 153);
+                }
+                .other--task-right{
+                    width: .4rem;
+                    height: .4rem;
+                }
+            }
+            .other__task:nth-last-of-type(5),.other__task:last-of-type{
+                border-bottom: none;
+            }
+        }
+    }
+}

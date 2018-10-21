@@ -1,0 +1,14 @@
+
+
+<!-- 中间的模板 -->
+<script id="findgood--many--father" type="text/html">
+    {{each find}}
+    <div class="findgood--many--children">
+        <div class="findgood--many--children-img" style="background:url({{$value.pic_url}}) center no-repeat;background-size:100%">
+            <div class="findgood--many--children-cover"></div>
+        </div>
+        <p class="findgood--many--children-title">{{$value.name}}</p>
+        <p class="findgood--many--children-price">￥ {{$value.price_min/100}}</p>
+    </div>
+    {{/each}}
+</script>
