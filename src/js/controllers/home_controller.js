@@ -1,33 +1,21 @@
-import shop_list_model from '../models/home_model'
 
-console.log('渲染商品');
+import render_data from './home_shop_controller'
+import render_slideshow from './home_slideshow_container'
+
+import home_template from '../views/home.html'
+
+
+console.log('render home');
 
 
 const render = () => {
 
+    
+    //渲染首页
+    render_slideshow.render_slideshow()
+    render_data.render_data()
+    document.querySelector('#app').innerHTML = home_template
     //1.处理轮播图
-    new Swiper('.slideshow-item', {
-        autoplay:true,
-        loop: true, // 循环模式选项
-
-        // 如果需要分页器
-        pagination: {
-            el: '.swiper-pagination',
-            
-        },
-    })
-
-    getShoplist();
-}
-
-
-
-const getShoplist = async () => {
-
-    let shop_data = await shop_list_model.shop_list();
-    let shop_list = shop_data.data.homepage.floors;
-    console.log(shop_list);
-
 }
 
 export default {

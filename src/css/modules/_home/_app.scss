@@ -251,10 +251,11 @@
                     box-sizing: border-box;
                     margin-top: .266667rem;
                     padding-right: .133333rem;
-                    white-space: pre-wrap;
+                    white-space: nowrap;
                     font-size: .373333rem;
                     overflow: hidden;
                     text-overflow: ellipsis;
+                    -webkit-line-clamp: 2;
                 }
                 .shop-price{
                     margin-top: .2rem;

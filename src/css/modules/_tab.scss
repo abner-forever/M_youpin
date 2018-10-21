@@ -1,5 +1,5 @@
 // 选项卡样式
-$top:-1.267rem;
+$top:-1.27rem;
 .tab{
     border-top: thin solid #b0b0b0;
     width: 100%;
@@ -27,6 +27,9 @@ $top:-1.267rem;
 
         @for $i from 0 through 5 {
             .tab-item-img-0#{$i+1} { background-position: 0 $top*$i; }
+          }
+          @for $i from 1 through 6 {
+            .tab-item-img-0#{$i}.active { background-position: 0 $top*($i+(-1))+$top/2; }
           }
     }
 }

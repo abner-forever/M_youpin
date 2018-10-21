@@ -1,6 +1,6 @@
 
 const webpack_config = {
-    mode : 'production',    //production
+    mode : 'development',    //production
     entry: {
         app:'./src/js/app.js'
     },
