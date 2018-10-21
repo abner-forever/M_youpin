@@ -1,6 +1,4 @@
 import shop_list_model from '../models/home_model'
-import slideshow_template from '../views/slideshow.html'
-import shoplist_template from '../views/shoplist.html'
 
 let _slideshow = {}
 const render_slideshow = async () => {
@@ -9,7 +7,12 @@ const render_slideshow = async () => {
 
 }
 const getSlideshow = async () => {
+    
+    if( JSON.parse(sessionStorage.getItem('key')) ){
+        let shop_data = await JSON.parse(sessionStorage.getItem('key'))
+    }
     let shop_data = await shop_list_model.shop_list()
+
     let shop_list = shop_data.data.homepage.floors
     _slideshow = shop_list[0]
     _slideshow = _slideshow.data.items
@@ -35,7 +38,6 @@ const render = () => {
 
             }
         })
-        // myswiper.update()
     })
 
 }

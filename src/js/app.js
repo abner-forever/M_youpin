@@ -16,6 +16,8 @@ window.router = router;
 
 router.init();
 
+home_render.render();
 
+console.log("hello app.js");
 
 

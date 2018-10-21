@@ -1,17 +1,19 @@
-import shop_list_model from '../models/home_model'
 
 let _shop_list = []
-const render_data = async() => {
-   await getShoplist()
-   console.log('renderdata');
-   
+const render_data = async () => {
+    console.log('renderdata before');
+    await getShoplist()
+    console.log('renderdata after');
+
 }
 const getShoplist = async () => {
-    let shop_data = await shop_list_model.shop_list()
-    console.log("商品信息：",shop_data);
+
+    // localStorage.setItem('key', JSON.stringify());
+    //先加载轮播图时已经获取到了数据 就直接从sessionStorage中直接取数据
+    let shop_data = await JSON.parse(sessionStorage.getItem('key'))
     
+
     let shop_list = shop_data.data.homepage.floors
-    console.log(shop_list)
     for (let i = 0; i < shop_list.length; i++) {
         if (i > 9) {
             _shop_list.push(shop_list[i])
@@ -19,7 +21,6 @@ const getShoplist = async () => {
     }
     console.log(_shop_list);
     console.log($('.shop-list'));
-    
     await render()
 }
 const render = () => {
@@ -35,6 +36,20 @@ const render = () => {
        $('.shop-list').html(_html);
    })
     
+    // 商品列表
+    $('.shop-list').load('/js/views/shoplist.html', () => {
+        let _html = template('shoplist', {
+            shop_list: _shop_list
+        });
+        $('.shop-list').html(_html);
+    })
+    Switchoptions()
+}
+//切换tab
+const Switchoptions = () => {
+    $('.tab').on('tap', '.tab-item', function () {
+        $(this).find('div').addClass('active').end().siblings().find('div').removeClass('active')
+    })
 }
 export default{
     render_data
