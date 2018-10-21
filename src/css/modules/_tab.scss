@@ -8,6 +8,10 @@ $top:-1.266667rem;
     align-items: center;
     display: flex;
     justify-content: space-between;
+    z-index: 9999;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
     .tab-item{
         height: 100%;
         flex: 1;
@@ -27,6 +31,6 @@ $top:-1.266667rem;
           }
     }
     .active{
-        background: black;
+        background: #ccc;
     }
 }

@@ -1,0 +1,76 @@
+#app{
+    .search-wrapper{
+        height: 1.2rem;
+        width: 100%;
+        border-bottom: solid .013333rem #ccc;
+        padding:.266667rem;
+        box-sizing: border-box;
+        .search{
+            height: .72rem;
+            background: rgb(239, 239, 240);
+            margin:  0px  .133333rem;   
+            padding-left: .133333rem;
+            box-sizing: border-box;
+            i{
+                font-size: .4rem;
+                
+            }
+            input{
+                margin-left: .08rem;
+                height: .506667rem;
+                width: 8.24rem;
+                border: none;
+                background: rgb(239, 239, 240);
+                margin-top: 7px;
+                padding-left: .08rem;
+            }
+        }
+    }
+    .content-wrapper{
+        display: flex;
+        .nav{
+            width: 2rem;
+            border-right: solid .013333rem #ccc;
+            height: 15.253333rem;
+            z-index: 100;
+            padding-top: .266667rem;
+            box-sizing: border-box;
+            overflow: hidden;
+            .swiper-container{
+                margin: none;
+                width: 100%;
+                height: 15.253333rem;
+                .swiper-wrapper{
+                    width: 100%;
+                    .swiper-slide{
+                        width: 100%;
+                        height: .64rem;
+                        text-align: center;
+                        line-height: .64rem;
+                        color: rgb(51,51,51);
+                    }
+                    .selected{
+                        border-left: .08rem solid  rgb(132, 95, 63);
+                        color:  rgb(132, 95, 63);
+                        font-size: .373333rem;
+                    }
+                }
+    
+            }
+        }
+        .goods-wrapper{
+            margin: 0 .4rem;
+            width: 7.2rem;
+            .title{
+                img{
+                    width: 7.2rem;
+                    margin-top: .346667rem;
+                }
+            }
+            .goods{
+
+            }
+        }
+    }
+    
+}

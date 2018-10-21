@@ -1,0 +1,27 @@
+
+<script id="shoplist" type="text/html">
+    {{each shop_list}}
+    <div class="production-list production">
+        <span class="item-title">{{$value.data.title}}</span>
+        <div class="item-container">
+            <div class="banner-img">
+                <img src="{{$value.data.pic_url}}">
+            </div>
+            <div class="shoplist">
+                {{each $value.data.items}}
+                <div class="production-list-item">
+                    <div class="production-list-item-img">
+                        <img src="{{$value.pic_url}}">
+                    </div>
+                    <span class="shop-title">{{$value.name}}</span>
+                    <div class="shop-price">
+                        <i>¥</i><span class="now-price">{{$value.price_min/100}}</span>
+                        <span class="market-price">{{$value.market_price/100}}</span>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script>

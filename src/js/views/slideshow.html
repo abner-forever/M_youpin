@@ -1,0 +1,11 @@
+<script id="slideshow" type="text/html">
+    <div class="slideshow-item swiper-container">
+        <div class="swiper-wrapper">
+            {{each slideshow}}
+            <div class="swiper-slide"><img width='100%' src="{{$value.pic_url}}" alt=""></div>
+            {{/each}}
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination "></div>
+    </div>
+</script>
