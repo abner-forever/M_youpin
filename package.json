@@ -23,5 +23,8 @@
   "dependencies": {
     "@babel/runtime": "^7.1.2",
     "global": "^4.3.2"
+  },
+  "scripts": {
+    "start": "gulp"
   }
 }

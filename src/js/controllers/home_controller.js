@@ -5,7 +5,7 @@ import render_slideshow from './home_slideshow_container'
 import home_template from '../views/home.html'
 
 
-console.log('渲染商品');
+console.log('render home');
 
 
 const render = () => {
