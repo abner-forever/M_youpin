@@ -25,6 +25,6 @@ const switchTab = () =>{
 
 }
 
-export default  {
+export default{
     render
 }

@@ -13,11 +13,8 @@ const server_config = {
             }
         }),
         proxy('/api',{
-            target : 'http://localhost:3000/classdata',
-            changeOrigin:true,
-            pathRewrite:{
-                '^/api':''
-            }
+            target : 'http://localhost:3000',
+            changeOrigin:true
         })
         // proxy('/api',{
         //     target:'http://localhost:3000',

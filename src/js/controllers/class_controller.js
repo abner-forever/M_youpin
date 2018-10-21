@@ -1,11 +1,30 @@
 import class_template from "../views/class.html";
+import goods_datas from "../models/class_model";
 
 
-const render = () => {
-
+const render = async () => {
+   let goods  = await getGoodsData();
+   console.log(goods);
+   let goods_data = goods.result.request.data;
+   console.log(goods_data);
+   let goodsdata = [];
+   for (var i=1; i<goods_data.length; i++){
+        goodsdata.push(goods_data[i]);
+    }   
+    console.log("goodsdata",goodsdata);
+    
+   
     document.querySelector("#app").innerHTML = class_template;
 
-   
+
+    $(".goods-container").load("/js/views/class_goods.html",()=>{
+        let _html = template("goods-template",{
+            goodsdata: goodsdata
+        });
+        $('.goods-container').html(_html);
+    })
+    
+
     
     var swiper = new Swiper('.swiper-container', {
         direction: 'vertical',
@@ -23,7 +42,7 @@ const render = () => {
     switchClass();
 
 
-    console.log("11");
+    
     
 
 }
@@ -33,7 +52,12 @@ const switchClass = () => {
     })
 }
 
-export default {
+const getGoodsData = () =>{
+    let goods =  goods_datas.goods_data();
+    return goods;
+}
+
+export default{
 
 
     render

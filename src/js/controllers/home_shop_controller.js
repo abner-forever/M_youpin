@@ -8,6 +8,8 @@ const render_data = async() => {
 }
 const getShoplist = async () => {
     let shop_data = await shop_list_model.shop_list()
+    console.log("商品信息：",shop_data);
+    
     let shop_list = shop_data.data.homepage.floors
     console.log(shop_list)
     for (let i = 0; i < shop_list.length; i++) {
@@ -34,6 +36,6 @@ const render = () => {
    })
     
 }
-export default {
+export default{
     render_data
 }
