@@ -46,9 +46,9 @@ class Router{
     switchTab () {
         $(".tab-item").each(function(item){
             if ( $(this).attr("path") === location.hash ){
-                $(this).addClass("active")
+                $(this).find("div").addClass("active")
             }else{
-                $(this).removeClass("active")
+                $(this).find("div").removeClass("active")
             }
         })
     }

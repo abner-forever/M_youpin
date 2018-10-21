@@ -8,7 +8,6 @@ $top:-1.266667rem;
     align-items: center;
     display: flex;
     justify-content: space-between;
-    z-index: 9999;
     position: fixed;
     bottom: 0;
     background: #fff;
@@ -29,8 +28,10 @@ $top:-1.266667rem;
         @for $i from 0 through 5 {
             .tab-item-img-0#{$i+1} { background-position: 0 $top*$i; }
           }
+          @for $i from 1 through 6 {
+            .tab-item-img-0#{$i}.active { background-position: 0 $top*($i+(-1))+$top/2; }
+          }
+    
     }
-    .active{
-        background: #ccc;
-    }
+    
 }
