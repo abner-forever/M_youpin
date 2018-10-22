@@ -16,8 +16,6 @@ import picturetemplate from './template'
 
 const render = () => {
 
-    
-
     smallbox.smallbox();
     findgood.findgood();
     picturetemplate.picturetemplate();
@@ -40,10 +38,6 @@ const render = () => {
 }
 
 
-export default {
-
-
+export default{
     render
-
-    
 }

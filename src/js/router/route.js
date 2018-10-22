@@ -7,7 +7,6 @@ import taste_controller from '../controllers/taste_controller';
 import cart_controller from '../controllers/cart_controller';
 
 import ucenter_controller from '../controllers/ucenter_controller';
-import taste_controller from '../controllers/taste_controller';
 
 
 
