@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    display:none;
+}
+
+html,body,.taste{
+    height: 100%;
+    width: 100%;
+    .taste{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .taste__header{
+            flex: 0 0 auto;
+            height: 1.2rem;
+            padding: 0 1.2rem;
+            line-height: 1.2rem;
+            text-align: center;
+            font-size: .426667rem;
+            border-bottom: .053333rem solid #BEBEBF;
+            justify-content: space-around;
+            position: absolute;
+            z-index: 999;
+            width: 100%;
+            background: #fff;
+        }
+        section{
+            flex: 1 1 auto;
+            overflow-y: scroll;
+            padding-top: 1.2rem;
+            .swipters{
+                // .swipter--big{
+                //     height: 4.586667rem;
+                //     margin: .266667rem 0;
+                //     position: relative;
+                //     overflow: hidden;
+                //     width: 27.44rem;
+                //     .swiper--big-box{
+                //         position: absolute;
+                //         left: -8.8rem;
+                //         .swiper--big-box-father{
+                //             width: 27.44rem;
+                //             .swiper--big-box-father-children{
+                //                 margin: auto;
+                //                 width: 9.146667rem;
+                //                 height: 4.573333rem;
+                //                 img{
+                //                     // margin: auto;
+                //                     width: 9.146667rem;
+                //                     height: 4.573333rem;
+                //                 }
+                //             }
+                //         }
+                //     }
+                // }
+                
+            }
+            .small__box{
+                height: 2.666667rem;
+                overflow: hidden;
+                overflow-x: scroll;
+                .small__box-box{
+                    height: 2.666667rem;
+                    width: 10.666667rem;
+                    display: flex;
+                    flex-direction: row;
+                    // 模板开始
+                    .small__box-box-info{
+                        height: 2.666667rem;
+                        width: 1.866667rem;
+                        margin-left: .266667rem;
+                        .small__box-box-info-img{
+                            width: 1.866667rem;
+                            height: 1.6rem;
+                            margin: auto;
+                        }
+                        .small__box-box-info p{
+                            margin-top: .266667rem;
+                            text-align: center;
+                            font-size: .32rem;
+                        }
+                    } 
+                    // 模板结束
+                }
+            }
+            .blank{
+                height: .266667rem;
+                background: rgb(245, 245, 245);
+            }
+            .smalltitle{
+                height: 1.066667rem;
+                font-size: .373333rem;
+                text-align: center;
+                line-height: 1.066667rem;
+            }
+            .findgood{
+                padding: 0 .4rem .4rem;
+                .findgood__picture{
+                    height: 2.56rem;
+                }
+                .findgood--many{
+                    width: 100%;
+                    height: 4.133333rem;
+                    overflow: hidden;
+                    overflow-x: scroll;
+                    .findgood--many--father{
+                        height: 4.133333rem;
+                        margin-top: .213333rem;
+                        display: flex;
+                        // 模板开始
+                        .findgood--many--children{
+                            width: 2.666667rem;
+                            height: 4.133333rem;
+                            margin-left: .213333rem;
+                            .findgood--many--children-img{
+                                // background: url(http://img.youpin.mi-img.com/800_pic/102005_21lt83h2xx968.png@base@tag=imgScale&h=350&w=350&et=1&eth=480&etw=480&etc=FFFFFF?t=webp) center no-repeat;
+                                height: 2.666667rem;
+                                width: 2.666667rem;
+                                // background-size: 100%;
+                                .findgood--many--children-cover{
+                                    background-color: rgba(0, 0, 0, 0.02);
+                                    height: 2.666667rem;
+                                    width: 2.666667rem;
+                                    float: left;
+                                }
+                            }
+                            .findgood--many--children-title{
+                                font-size: .32rem;
+                                margin: 10px 0 14px;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                            }
+                            .findgood--many--children-price{
+                                font-size: .373333rem;
+                                color: rgb(182, 9, 9);
+                            }
+                        }
+                        .findgood--many--children:first-of-type{
+                            margin-left: 0;
+                        }
+                        // 模板结束
+                    }
+                }
+            }
+            .repetition{
+                // 模板开始
+                .template{
+                    padding: 0 .4rem .4rem;
+                    margin-top: .133333rem;
+                    .template__picture{
+                        img{
+                            width: 9.2rem;
+                            height: 4.6rem;
+                        }
+                    }
+                    .template__bigtitle{
+                        margin-top: .4rem;
+                        font-size: 20px;
+                        text-align: center;
+                        /* line-height: .44rem; */
+                    }
+                    .template__smalltitle{
+                        margin-top: .213333rem;
+                        font-size: 13px;
+                        text-align: center;
+                        color: #989898;
+                        /* line-height:  */
+                    }
+                    .template__btn{
+                        text-align: center;
+                        margin: .28rem 0 .213333rem;
+                        a{
+                            display: block;
+                            margin: auto;
+                            text-decoration: none;
+                            width: 1.773333rem;
+                            height: .72rem;
+                            line-height: .72rem;
+                            background-color: #835E3F;
+                            border-radius: .08rem;
+                            font-size: .36rem;
+                            color: #fff;
+                        }
+                    }
+                }
+                // 模板结束 
+            }
+        }
+        // footer{
+        //     flex: 0 0 auto;
+        //     height: 1.333333rem;
+        //     display: flex;
+        //     justify-content: space-between;
+        //     .footer__childer{
+        //         display: flex;
+        //         flex-grow: 1;
+        //         flex-direction: column;
+        //         align-items: center;
+        //     }
+        // }
+    }
+}
+
+
+
+
+
+
+.swipter--big{
+    height: 4.586667rem;
+    margin: .266667rem 0;
+    position: relative;
+    overflow: hidden;
+    .swiper--big-box{
+        position: absolute;
+        left: -8.8rem;
+        width: 27.44rem;
+        .swiper--big-box-father{
+            width: 27.44rem;
+            .swiper--big-box-father-children{
+                margin: auto;
+                width: 9.146667rem;
+                height: 4.573333rem;
+                .swiper--big-box-father-children-img{
+                    margin: auto;
+                    width: 9.146667rem;
+                    height: 4.573333rem;
+                }
+            }
+        }
+    }
+}
