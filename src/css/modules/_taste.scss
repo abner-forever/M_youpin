@@ -14,7 +14,7 @@ html,body,.taste{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        header{
+        .taste__header{
             flex: 0 0 auto;
             height: 1.2rem;
             padding: 0 1.2rem;
@@ -22,10 +22,16 @@ html,body,.taste{
             text-align: center;
             font-size: .426667rem;
             border-bottom: .053333rem solid #BEBEBF;
+            justify-content: space-around;
+            position: absolute;
+            z-index: 999;
+            width: 100%;
+            background: #fff;
         }
         section{
             flex: 1 1 auto;
             overflow-y: scroll;
+            padding-top: 1.2rem;
             .swipters{
                 // .swipter--big{
                 //     height: 4.586667rem;
@@ -63,16 +69,16 @@ html,body,.taste{
                     display: flex;
                     flex-direction: row;
                     // 模板开始
-                    .small__box-box-template{
+                    .small__box-box-info{
                         height: 2.666667rem;
                         width: 1.866667rem;
                         margin-left: .266667rem;
-                        .small__box-box-template-img{
+                        .small__box-box-info-img{
                             width: 1.866667rem;
                             height: 1.6rem;
                             margin: auto;
                         }
-                        .small__box-box-template p{
+                        .small__box-box-info p{
                             margin-top: .266667rem;
                             text-align: center;
                             font-size: .32rem;
