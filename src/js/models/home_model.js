@@ -12,12 +12,11 @@ const shop_lists = () => {
 
 }
 
-const shop_list = async ()=>{
-   let data = await shop_lists()
-   await sessionStorage.setItem('key', JSON.stringify(data));
+const shop_list = async () => {
+    let data = await shop_lists()
+    await sessionStorage.setItem('key', JSON.stringify(data));
     return data
 }
-
 
 export default {
     shop_list

@@ -1,22 +1,13 @@
-
 import taste_template from "../views/taste.html";
-import smallbox from './small__box-box'
-import findgood from './findgood--many--father'
-import picturetemplate from './template'
-
-
-// import from '../../static/js/swiper-4.3.5.min.js'
-// import swiper from './swiper'
-
-
-// console.log('findgood--many--father')
-
-// console.log(datas)
+import taste_slideshow from './taste_slideshow_controller'
+import findgood from './taste_intro_controller'
+import picturetemplate from './taste_discoverylist_controller'
 
 
 const render = () => {
 
-    smallbox.smallbox();
+    taste_slideshow.smallbox();
+
     findgood.findgood();
     picturetemplate.picturetemplate();
     document.querySelector("#app").innerHTML = taste_template;
@@ -27,17 +18,13 @@ const render = () => {
         // freeMode: true,
         centeredSlides: true,
         direction: 'horizontal', // 水平切换选项
-        loop: true,// 循环模式选项
+        loop: true, // 循环模式选项
         autoplay: {
             disableOnInteraction: false
-        }// 自动播放
+        } // 自动播放
     })
-    console.log("swiper")
-
-
 }
 
-
-export default{
+export default {
     render
 }

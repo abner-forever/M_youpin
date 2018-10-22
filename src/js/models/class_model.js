@@ -1,13 +1,13 @@
 //获取分类信息
-const goods_data = () =>{
+const goods_data = () => {
     return $.ajax({
-        url:'/api/classdata/classdata',
-        dataType:'json',
-        success :(res)=>{
+        url: '/api/shop/classdata',
+        dataType: 'json',
+        success: (res) => {
             return res;
         }
     })
 }
-export default{
+export default {
     goods_data
 }

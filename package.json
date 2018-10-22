@@ -25,7 +25,8 @@
     "global": "^4.3.2"
   },
   "scripts": {
-    "mock": "json-server ./src/static/mock/mock.js ",
-    "start":"npm run mock"
+    "dev": "gulp",
+    "mock": "json-server ./src/static/mock/mock.js -r ./src/static/mock/routes.json",
+    "start": "concurrently \"npm run mock\"  \"npm run dev\""
   }
 }

@@ -6,31 +6,23 @@ import taste_controller from '../controllers/taste_controller';
 import cart_controller from '../controllers/cart_controller';
 import ucenter_controller from '../controllers/ucenter_controller';
 
-
-console.log("render");
-
 const render = () => {
 
     document.querySelector(".tab").innerHTML = tab_template;
     $("#tan_main").addClass("active");
 
-    switchTab(); 
+    switchTab();
 }
 
-const switchTab = () =>{
-    $(".tab-item").on("tap",function(){
-        let _controllers = [home_controller,class_controller,taste_controller,cart_controller,ucenter_controller];
-        _controllers[$(this).index()].render();
-       console.log(_controllers[$(this).index()]);
-       
-        
+const switchTab = () => {
+    $(".tab-item").on("tap", function () {
+        let _controllers = [home_controller, class_controller, taste_controller, cart_controller, ucenter_controller];
         $(this).find("div").addClass("active").end().siblings().find("div").removeClass("active")
+        _controllers[$(this).index()].render();
 
     })
-
-
 }
 
-export default{
+export default {
     render
 }
