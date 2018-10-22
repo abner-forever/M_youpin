@@ -41,6 +41,6 @@ const render = () => {
     })
 
 }
-export default {
+export default{
     render_slideshow
 }

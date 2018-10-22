@@ -18,6 +18,6 @@ const render = () => {
     //1.处理轮播图
 }
 
-export default {
+export default{
     render
 }

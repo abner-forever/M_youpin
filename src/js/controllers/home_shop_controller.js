@@ -51,6 +51,6 @@ const Switchoptions = () => {
         $(this).find('div').addClass('active').end().siblings().find('div').removeClass('active')
     })
 }
-export default {
+export default{
     render_data
 }

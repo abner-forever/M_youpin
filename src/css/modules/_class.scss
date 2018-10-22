@@ -67,6 +67,22 @@
                     margin-top: .346667rem;
                 }
             }
+            .goods-container{
+                width: 7.2rem;
+                display: flex;
+                flex-wrap: wrap;
+                .goods{
+                    width: 2.4rem;
+                    height: 2.72rem;
+                    img{
+                        margin-left: .266667rem;
+                        width: 1.866667rem;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                }
+            }
             
         }
     }
